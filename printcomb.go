@@ -12,6 +12,7 @@ func PrintComb() {
 				z01.PrintRune(',')
 				z01.PrintRune(' ')
 			}
+			z01.PrintRune('\n')
 		}
 	}
 }
