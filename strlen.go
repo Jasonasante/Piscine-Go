@@ -6,4 +6,5 @@ func StrLen(s string) int {
 	for index := range astr {
 		a = index + 1
 	}
+	return
 }
