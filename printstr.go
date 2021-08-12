@@ -3,8 +3,7 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintStr(s string) {
-	schangeable := []byte(s)
-	for index, i := range schangeable {
-		z01.PrintRune(rune(s))
+	for _, i := range s {
+		z01.PrintRune(i)
 	}
 }
