@@ -6,6 +6,6 @@ func Sqrt(nb int) int {
 		if i*i == nb {
 			return i
 		}
-	} 
+	}
 	return 0
 }
