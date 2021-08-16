@@ -4,7 +4,7 @@ func IterativeFactorial(nb int) int {
 	result := 1
 
 	if nb < 1 {
-		return 0
+		return 1
 	}
 	if nb > 25 {
 		return 0
