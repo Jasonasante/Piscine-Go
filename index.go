@@ -5,7 +5,7 @@ func Index(s string, toFind string) int {
 	substring := []rune(toFind)
 	counter := 0
 	if len(toFind) > len(s) {
-		return -1
+		return 0
 	} else {
 		for i := 0; i <= len(s)-len(toFind); i++ {
 			for j := 0; j < len(toFind); j++ {
