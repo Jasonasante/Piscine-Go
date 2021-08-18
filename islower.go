@@ -1,6 +1,6 @@
 package piscine
 
-func IsUpper(s string) bool {
+func IsLower(s string) bool {
 	astr := []rune(s)
 
 	for _, i := range astr {
