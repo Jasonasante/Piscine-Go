@@ -10,8 +10,10 @@ func main() {
 	arguments := os.Args
 	name := arguments[0]
 	runes := []rune(name)
-	for i := range runes {
-		z01.PrintRune(runes[i])
+	for i, j := range runes {
+		if i < 1 {
+			z01.PrintRune(rune(j))
+		}
 	}
 	z01.PrintRune('\n')
 }
