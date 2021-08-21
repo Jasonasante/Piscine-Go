@@ -11,7 +11,7 @@ func main() {
 	name := arguments[0]
 	runes := []rune(name)
 	for i, j := range runes {
-		if i < 1 {
+		if i > 1 {
 			z01.PrintRune(rune(j))
 		}
 	}
