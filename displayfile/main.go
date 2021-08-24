@@ -18,7 +18,7 @@ func main() {
 	}
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Printf("the mistke is: %v\n", err.Error())
 		return
 	}
 	fmt.Println(string(content))
