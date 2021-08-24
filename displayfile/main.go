@@ -8,11 +8,11 @@ import (
 
 func main() {
 	file := "quest8.txt"
-	if len(os.Args) < 1 {
+	if len(os.Args) < 2 {
 		fmt.Println("File name missing")
 		return
 	}
-	if len(os.Args) > 1 {
+	if len(os.Args) > 2 {
 		fmt.Println("Too many arguments")
 		return
 	}
