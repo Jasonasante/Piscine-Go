@@ -5,14 +5,14 @@ func IsSorted(f func(a, b int) int, a []int) bool {
 		return true
 	}
 	if f(a[0], a[1]) >= 0 {
-		for k := 0; k < len(a); k++ {
+		for k := 0; k < len(a)-1; k++ {
 			if f(a[k], a[k+1]) < 0 {
 				return false
 			}
 		}
 	}
 	if f(a[0], a[1]) <= 0 {
-		for j := 0; j < len(a); j++ {
+		for j := 0; j < len(a)-1; j++ {
 			if f(a[j], a[j+1]) > 0 {
 				return false
 			}
