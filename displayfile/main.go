@@ -18,8 +18,8 @@ func main() {
 	}
 	content, err := ioutil.ReadFile(fileName)
 	if err != nil {
-		fmt.Println("the mistake is: %v", err.Error())
+		fmt.Printf("the mistake is: %v\n", err.Error())
 		return
 	}
-	fmt.Println(string(content))
+	fmt.Printf(string(content))
 }
