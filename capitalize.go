@@ -4,6 +4,9 @@ func Capitalize(s string) string {
 	var cap []rune
 	l := ToLower(s)
 	r := []rune(l)
+	if len(l) == 1 {
+		r[0] = r[0] - 32
+	}
 	for i := 0; i < len(l)-1; i++ {
 		if r[0] >= 'a' && r[0] <= 'z' {
 			r[0] = r[0] - 32
